@@ -1,0 +1,49 @@
+{
+  "name": "conversorimg",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:css": "postcss src/style.css -o src/compiled-style.css"
+  },
+  "build": {
+    "appId": "com.example.conversorimg",
+    "files": [
+      "src/**/*",
+      "main.js",
+      "preload.js",
+      "package.json",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "src/assets/icon.ico" 
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "artifactName": "${productName} Setup ${version}.${ext}"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "sharp": "^0.33.4",
+    "tailwindcss": "^3.4.9"
+  },
+  "devDependencies": {
+    "electron": "^31.3.1",
+    "electron-builder": "^24.13.3",
+    "postcss": "^8.4.41"
+  }
+}

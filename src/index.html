@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Imagens</title>
+    <link href="compiled-style.css" rel="stylesheet" />
+
+    <meta
+      http-equiv="Content-Security-Policy"1
+      content="default-src 'self'; script-src 'self'; style-src 'self';"
+    />
+  </head>
+  <body class="bg-black flex items-center justify-center h-screen">
+    <div class="text-center p-6 bg-gray-800 rounded-lg shadow-lg">
+      <h1 class="text-3xl font-bold text-white mb-4">Conversor de Imagens</h1>
+      <button
+        id="select-images"
+        class="bg-blue-500 text-white py-2 px-4 rounded mb-4 hover:bg-blue-600"
+      >
+        Selecionar Imagens
+      </button>
+      <br />
+      <button
+        id="convert-images"
+        class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
+      >
+        Converter Imagens
+      </button>
+      <br />
+      <progress
+        id="progress-bar"
+        value="0"
+        max="100"
+        class="mt-4 w-full"
+      ></progress>
+      <p id="progress-text" class="text-white mt-2">0%</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

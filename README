@@ -1,0 +1,62 @@
+# Conversor de Imagens
+
+Este é um aplicativo de desktop desenvolvido com Electron, que permite selecionar e converter imagens em diferentes formatos. O projeto foi construído utilizando Electron, TailwindCSS e Sharp para o processamento de imagens.
+
+## Funcionalidades
+
+- Seleção de múltiplas imagens para conversão.
+- Redimensionamento automático das imagens selecionadas.
+- Exibição do progresso da conversão em uma barra de progresso.
+- Criação automática de um diretório de saída, nomeado com a data e hora atuais, para armazenar as imagens convertidas.
+
+## Tecnologias Utilizadas
+
+- **Electron**: Framework para criação de aplicações de desktop usando HTML, CSS e JavaScript.
+- **TailwindCSS**: Framework de CSS utilitário para estilização.
+- **Sharp**: Biblioteca de processamento de imagens de alta performance.
+
+## Pré-requisitos
+
+- **Node.js**: Certifique-se de ter o Node.js instalado na sua máquina.
+- **Electron**: Instalado como dependência de desenvolvimento.
+- **Sharp**: Instalado como dependência para manipulação de imagens.
+
+## Instalação
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/conversorimg.git
+   cd conversorimg
+   ```
+
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Inicie a aplicação:
+
+```bash
+npm start
+```
+
+## Estrutura do Projeto
+
+- **main.js**: Arquivo principal que gerencia a janela do aplicativo e lida com as chamadas IPC.
+- **preload.js**: Arquivo que expõe métodos seguros para o renderer process acessar funcionalidades do Node.js.
+- **index.html**: Interface do usuário, construída com HTML e estilizada com TailwindCSS.
+- **index.js**: Script que gerencia as interações do usuário e comunica-se com o processo principal via IPC.
+- **compiled-style.css**: Arquivo CSS gerado pelo TailwindCSS.
+
+## Como Usar
+
+1. Abra o aplicativo e clique no botão "Selecionar Imagens" para escolher as imagens que deseja converter.
+2. Após selecionar as imagens, clique em "Converter Imagens" para iniciar o processo de conversão.
+3. A barra de progresso exibirá o andamento da conversão.
+4. Ao término, as imagens convertidas serão salvas em um diretório automaticamente criado, com o nome no formato dd-MM-yyyy_HH-mm-ss.
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.

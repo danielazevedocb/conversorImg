@@ -1,0 +1,49 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+out/
+
+# Logs
+*.log
+
+# Local environment files
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Compiled source
+*.tsbuildinfo
+*.js
+*.d.ts
+
+# Dependency directories
+jspm_packages/
+
+# VS Code settings
+.vscode/
+
+# MacOS Finder
+*.DS_Store
+
+# Windows image file caches
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Electron specific files
+*.asar
+*.exe
+*.app
+*.dmg
+
+# Coverage reports
+coverage/
+
+# Temporary files
+tmp/
+temp/
