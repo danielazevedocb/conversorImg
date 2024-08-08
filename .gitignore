@@ -16,10 +16,6 @@ out/
 .DS_Store
 Thumbs.db
 
-# Compiled source
-*.tsbuildinfo
-*.js
-*.d.ts
 
 # Dependency directories
 jspm_packages/
